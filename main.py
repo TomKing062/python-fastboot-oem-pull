@@ -8,7 +8,6 @@ SUBCLASS = 0x42
 PROTOCOL = 0x03
 
 DeviceIsAvailable = common.InterfaceMatcher(CLASS, SUBCLASS, PROTOCOL)
-print(DeviceIsAvailable)
 _handle = common.UsbHandle.FindAndOpen(DeviceIsAvailable, None, None, 1000)
 _protocol = fastboot.FastbootProtocol(_handle, 1024)
 
