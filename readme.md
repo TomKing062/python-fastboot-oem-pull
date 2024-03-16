@@ -2,11 +2,12 @@
 
 Use libusb
 
-Install (hacky)
+Install
 
-1. install [python-adb](https://github.com/google/python-adb) by`python setup.py install`
-2. `pip uninstall adb`
-3. copy adb folder in this project to `$PYTHON_INSTALL_DIR/Lib/site-packages/adb`
+1. `pip install pycryptodome`
+2. `pip install libusb1`
+3. (windows) copy libusb-1.0.dll to C:\Windows\System32\ (i use [MSYS2-MINGW64 one](https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-libusb-1.0.27-1-any.pkg.tar.zst))
+4. (some version python need this, some not) copy adb folder in this project to `$PYTHON_INSTALL_DIR/Lib/site-packages/adb`
 
 Usage:
 
